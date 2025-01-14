@@ -1,6 +1,6 @@
 import gql from "graphql-tag";
 
-const typeDefs = gql`
+export const typeDefs = gql`
   type Query {
     "Query to get tracks array for the homepage grid"
     trackForHome: [Track!]!
@@ -30,5 +30,3 @@ const typeDefs = gql`
     photo: String
   }
 `;
-
-module.exports = typeDefs;
